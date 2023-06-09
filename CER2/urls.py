@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core import views # Importar el archivo views de la carpeta core, para así poder interactuar con ésta
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home, name="home"), # Representa la página de inicio de tu aplicación. Apuntando al archivo views y a la función home.
+    path('comunicados/', views.comunicados, name="comunicados"), # Representa la página de comunicados. Apuntando al archivo views y a la función comunicados. 
 ]

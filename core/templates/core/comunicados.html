@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% load static%}
+
+{% block contenido %}
+
+<h1>Comunicados</h1>
+<div class="container">
+  
+
+</div>
+
+<div class="row">
+    {% for comunicado in comunicados %}
+      <div class="col-4">
+        <div class="card">    
+            <div class="card-body">
+              <h5 class="card-title">{{ comunicado.titulo }}</h5>  <!-- Título del comunicado -->
+              <h6 class="card-subtitle">{{ comunicado.nivel }}</h6>  <!-- Nivel del comunicado -->
+              <p class="card-text">{{ comunicado.detalle }}</p>  <!-- Detalle del comunicado -->
+              <p class="card-text">Fecha de envío: {{ comunicado.fecha_envio }}</p>  <!-- Fecha de envío del comunicado -->
+              <p class="card-text">Publicado por: {{ comunicado.publicado_por }}</p>  <!-- Usuario que publicó el comunicado -->
+              </div>
+        </div> 
+        <br>   
+      </div>
+    {% empty %}
+        <p>No hay comunicados disponibles.</p>
+    
+    {% endfor %}
+
+{% endblock %}

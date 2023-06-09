@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+}
+
+/* Esto es para el navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2F0F5D;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #0EA293;
+}
+
+/* Esto es para el body y el titulo*/
+h1 {
+  background-color: #0EA293;
+}
+body {
+  margin: 0 auto;
+  font-family: Arial;
+  background-color: #ffffff;
+  color: white;
+}
+
+
+.comunicado {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #0EA293;
+}
+
+.titulo {
+  font-size: auto;
+  font-weight: bold;
+}
+
+.card{
+  background-color: #F5F3C1;
+}
+
+#colegio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colegio img {
+  max-width: 500px;
+  height: auto;
+}

@@ -39,17 +39,8 @@ body {
 }
 
 
-.comunicado {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #0EA293;
-}
-
-.titulo {
-  font-size: auto;
-  font-weight: bold;
-}
+/* Lo siguiente es para personalizar y hacer calzar las cards
+y la imagen del home. */
 
 .card{
   background-color: #F5F3C1;

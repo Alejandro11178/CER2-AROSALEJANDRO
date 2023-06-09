@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #Mis apps
-    'core',
-    'colorfield',
+    'core', # Nuestra app
+    'colorfield', # Este es para poder personalizar el panel administrador de Django
 ]
 
+# Las siguientes variables se crean para personalizar el panel administrador de Django, 
+# que me las proporciona su manual de instrucciones (de como instalar en mi código django-admin-interface) 
 X_FRAME_OPTIONS = "SAMEORIGIN"
-SILENCED_SYSTEM_CHECKS = ["security.W019"]
+SILENCED_SYSTEM_CHECKS = ["security.W019"] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
